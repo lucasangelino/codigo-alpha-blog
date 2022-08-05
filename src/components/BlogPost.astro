@@ -1,0 +1,29 @@
+---
+const { title, date, hero, youtube } = Astro.props;
+---
+
+<article class="max-w-5xl mx-auto px-3">
+  <header class="mx-auto max-w-3xl text-center">
+    <h1 class="text-5xl font-bold">{title}</h1>
+    <div class="flex flex-row justify-evenly">
+      <p class="text-xl">{date}</p>
+      <a class="text-xl" href="" target="_blank">{"¿Una errata? Edita el artículo"}</a>
+    </div>
+  </header>
+
+  <!-- Image -->
+  {hero && <img class="rounded-xl mx-auto" style="min-width: 80%;" loading="lazy" src={hero} alt={title} />}
+
+  <!-- YouTube Video -->
+  <!-- {youtube && <div class="embed-responsive aspect-ratio-16/9 mt-6 lg:mt-12">
+    <iframe width="700" height="500" class="embed-responsive-item"
+      src={`https://www.youtube.com/embed/${youtube}`} frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+  </div>} -->
+
+  <!-- Content -->
+  <section class="max-w-3xl mx-auto py-6 lg:py-12 content">
+    <slot />
+  </section>
+
+</article>
