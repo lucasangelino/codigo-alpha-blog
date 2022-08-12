@@ -11,7 +11,7 @@
   }
 
   h2 {
-    @apply text-4xl font-bold leading-none mt-12 py-6 tracking-tight;
+    @apply text-4xl font-bold leading-none mt-12 py-6 tracking-tight text-[#0092E5];
   }
 
   h3 {
@@ -32,11 +32,11 @@
     } */
 
   > blockquote {
-    @apply text-center font-bold italic px-4 mb-12 pt-6 text-3xl leading-tight;
+    @apply text-center font-bold italic px-4 mb-12 pt-6 text-3xl leading-tight bg-[#EFDA4D] rounded-lg;
   }
 
   > blockquote > p {
-    @apply text-3xl leading-tight;
+    @apply text-xl leading-tight pb-4;
   }
 
   > img {

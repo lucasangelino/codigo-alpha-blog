@@ -6,6 +6,7 @@ description: "How to compare dates in JavaScript natively using the Date Object,
 hero: "/images/javascript-logo-banner.jpg"
 tags: ["javascript"]
 layout: "../../layouts/BlogPostLayout.astro"
+draft: true
 ---
 
 Working with dates in JavaScript can be tricky to say the least. Recently I needed to compare two dates with one another to see which was greater than, less than, etc.
@@ -28,6 +29,13 @@ const today = new Date();
 console.log(compareDate >= today);
 // false
 ```
+
+## Solution 🚀
+
+- primero tal cosa
+- segundo tal cosa
+
+> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog 🐱‍🏍.
 
 The issue is that even though the dates are the same, the times are not.
 
