@@ -6,7 +6,7 @@ description: "Principios Solid en React Parte 1 - Principio de Responsabilidad U
 hero: "/images/solid2.webp"
 tags: ["javascript"]
 layout: "../../layouts/BlogPostLayout.astro"
-draft: true
+draft: false
 ---
 
 ## Motivación
