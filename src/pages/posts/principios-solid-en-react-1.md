@@ -1,9 +1,9 @@
 ---
-title: "Principios Solid en React Parte 1"
-date: "2020-01-28"
+title: "Principios Solid en React Parte 1 - SRP"
+date: "12 de Enero de 2022"
 slug: "how-to-compare-dates-in-javascript"
 description: "Principios Solid en React Parte 1 - Principio de Responsabilidad Unica."
-hero: "/images/solid-en-react.svg"
+hero: "/images/solid2.webp"
 tags: ["javascript"]
 layout: "../../layouts/BlogPostLayout.astro"
 draft: true
