@@ -68,14 +68,14 @@
   }
 
   code {
-    background: #2d2d2d;
     color: #ccc;
-    padding: 5px;
+    padding: 10px;
   }
-
-  /* pre {
-        margin-bottom: 2em;
-    } */
+  .astro-code {
+    background: #282c34;
+    border-radius: 10px;
+    padding: 10px;
+  }
 
   p code,
   ul li *:not(pre) code,
