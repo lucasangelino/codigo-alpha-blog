@@ -32,7 +32,7 @@
     } */
 
   > blockquote {
-    @apply text-center font-bold italic px-4 mb-12 pt-6 text-3xl leading-tight bg-[#EFDA4D] rounded-lg;
+    @apply text-center font-bold italic px-4 mb-12 pt-6 pb-1 text-3xl leading-tight bg-[#EFDA4D] rounded-lg;
   }
 
   > blockquote > p {
