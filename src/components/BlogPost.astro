@@ -7,8 +7,8 @@ const { title, date, hero, youtube } = Astro.props;
     <h1 class="text-5xl font-bold">{title}</h1>
     <div class="flex flex-row justify-between items-center my-4">
       <time itemprop="datePublished" datetime={date} class="text-ms">{date}</time>
-      <div class="flex flex-row">
-        <a href="https://github.com/lucasangelino/codigo-alpha-blog" target="_blank">Edit post on GitHub</a>
+      <div class="flex flex-row text-xs">
+        <a class="underline text-blue-800" href="https://github.com/lucasangelino/codigo-alpha-blog" target="_blank">Edit post on GitHub</a>
       </div>
     </div>
   </header>
