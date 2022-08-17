@@ -73,6 +73,9 @@
     background: #282c34;
     border-radius: 10px;
   }
+  p > code {
+    @apply bg-[#0092E5];
+  }
   .astro-code {
     display: grid;
     border-radius: 10px;
