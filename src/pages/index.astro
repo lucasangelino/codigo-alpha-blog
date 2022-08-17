@@ -21,9 +21,9 @@ const allPosts = await Astro.glob('./posts/*.md');
 <body class="bg-white text-black font-body leading-normal personality-casual">
   <Nav />
 
-  <main class="py-12 lg:py-20">
+  <main class="py-12 lg:py-20 min-h-screen">
     <article class="max-w-6xl mx-auto px-3">
-      <HomeHeader title={title} description={description} />
+      <!-- <HomeHeader title={title} description={description} /> -->
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
         {allPosts.map(p => <div class="col-span-1">
           <Card post={p} />
