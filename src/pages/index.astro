@@ -22,18 +22,40 @@ const allPosts = await Astro.glob('./posts/*.md');
   <Nav />
 
   <main class="py-12 lg:py-20 min-h-screen">
-    <article class="max-w-6xl mx-auto px-3">
-      <!-- <HomeHeader title={title} description={description} /> -->
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
-        {allPosts.map(p => <div class="col-span-1">
-          <Card post={p} />
-        </div>)}
-      </section>
-    </article>
-  </main>
 
-  <section class="flex space-x-8 justify-center text-xl pt-8 font-bold">
-  </section>
+    <div class="grid md:grid-cols-1 lg:grid-cols-4 mx-auto px-5">
+      <div class="lg:col-span-3 md:col-span-1">
+        <article class="max-w-6xl mx-auto px-3">
+          <!-- <HomeHeader title={title} description={description} /> -->
+          <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8 place-content-evenly">
+            {allPosts.map(p => <div class="col-span-1">
+              <Card post={p} />
+            </div>)}
+          </section>
+        </article>
+      </div>
+      <div class="md:col-span-1 px-5">
+        <section class="flex flex-col justify-center text-xl pt-8 font-bold">
+          <div class="my-2">
+            <a href="#" class="block p-6 max-w-sm bg-gradient-to-r from-[#ffb347] to-[#ffcc33] rounded-lg border border-gray-200 shadow-md hover:bg-gray-100">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Cursos Gratuitos</h5>
+              <p class="font-normal text-gray-800 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            </a>  
+          </div>
+
+          <div class="my-2">
+            <a href="#" class="block p-6 max-w-sm bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0] rounded-lg border border-gray-200 shadow-md hover:bg-gray-100">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-100">Cursos Gratuitos</h5>
+              <p class="font-normal text-gray-300 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            </a>  
+          </div>
+
+        </section>
+      </div>
+
+    </div>
+
+  </main>
 
   <Footer />
 </body>
