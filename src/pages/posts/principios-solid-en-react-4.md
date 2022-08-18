@@ -9,7 +9,7 @@ layout: "../../layouts/BlogPostLayout.astro"
 draft: false
 ---
 
-# Principio de segregación de interfaz (ISP)
+## Principio de segregación de interfaz (ISP)
 
 Según ISP, "los clientes no deben depender de interfaces que no usan". Por el bien de las aplicaciones React, lo traduciremos en "los componentes no deberían depender de accesorios que no usan".
 
