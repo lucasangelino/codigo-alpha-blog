@@ -4,7 +4,7 @@ pubDate: "2020-08-12"
 slug: "solid-principles-react-1"
 description: "Principios Solid en React Parte 1 - Principio de Responsabilidad Unica."
 hero: "/images/solid2.webp"
-tags: ["javascript"]
+tags: ["React"]
 layout: "../../layouts/BlogPostLayout.astro"
 draft: false
 ---

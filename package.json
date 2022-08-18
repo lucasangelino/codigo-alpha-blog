@@ -10,9 +10,12 @@
     "preview": "astro preview"
   },
   "devDependencies": {
+    "@astrojs/react": "^1.0.0",
     "astro": "^1.0.0-beta.73",
     "globby": "^13.1.1",
     "mark.js": "^8.11.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "sass": "^1.49.9",
     "tailwindcss": "^3.1.6"
   },

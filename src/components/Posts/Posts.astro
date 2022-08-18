@@ -1,0 +1,26 @@
+---
+import Card from '../Card.astro';
+const allPosts = await Astro.glob('../../pages/posts/*.md');
+
+// add tags filter feature
+const tags = [
+  {
+    name: 'Javascript',
+    color: '#f7df1e',
+  },
+  {
+    name: "React",
+    color: "#60DAFA"
+  }
+]
+---
+
+<div class="lg:col-span-3 md:col-span-1">
+    <article class="max-w-6xl mx-auto px-3">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8 place-content-evenly">
+        {allPosts.map(p => <div class="col-span-1">
+            <Card post={p} />
+        </div>)}
+        </section>
+    </article>
+</div>

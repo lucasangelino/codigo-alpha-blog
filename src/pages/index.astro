@@ -1,15 +1,14 @@
 ---
 import BaseHead from '../components/Head/BaseHead.astro';
 import Nav from '../components/Nav.astro';
-import HomeHeader from '../components/HomeHeader.astro';
-import Card from '../components/Card.astro';
-import Footer from '../components/Footer/Footer.astro'
+import Footer from '../components/Footer/Footer.astro';
+import Posts from '../components/Posts/Posts.astro';
+import Sidebar from '../components/Sidebar/Sidebar.astro';
+import MainLayout from '../layouts/MainLayout.astro';
 
 const title = 'Codigo Alpha';
-const description = 'Contenido de desarrollo en Español';
 const seoDescription =  `${title} - Desarrollo de software en Español`
 
-const allPosts = await Astro.glob('./posts/*.md');
 ---
 
 <html lang="en">
@@ -17,47 +16,12 @@ const allPosts = await Astro.glob('./posts/*.md');
 <head>
   <BaseHead title={title} description={seoDescription} />
 </head>
-
 <body class="bg-white text-black font-body leading-normal personality-casual">
   <Nav />
-
-  <main class="py-12 lg:py-20 min-h-screen">
-
-    <div class="grid md:grid-cols-1 lg:grid-cols-4 mx-auto px-5">
-      <div class="lg:col-span-3 md:col-span-1">
-        <article class="max-w-6xl mx-auto px-3">
-          <!-- <HomeHeader title={title} description={description} /> -->
-          <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8 place-content-evenly">
-            {allPosts.map(p => <div class="col-span-1">
-              <Card post={p} />
-            </div>)}
-          </section>
-        </article>
-      </div>
-      <div class="md:col-span-1 px-5">
-        <section class="flex flex-col justify-center text-xl pt-8 font-bold">
-          <div class="my-2">
-            <a href="#" class="block p-6 max-w-sm bg-gradient-to-r from-[#ffb347] to-[#ffcc33] rounded-lg border border-gray-200 shadow-md">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Recursos Dev</h5>
-              <p class="font-normal text-gray-800 ">Aquí tienes una lista de recursos útiles para desarrollar. Snippets, Videos, Cursos, Apps, Documentación y mucho más...</p>
-            </a>  
-          </div>
-
-          <div class="my-2">
-            <a href="#" class="block p-6 max-w-sm bg-gradient-to-r from-[#373B44] to-[#4286f4] rounded-lg border border-gray-200 shadow-md">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-200">Podcast Dev</h5>
-              <p class="font-normal text-gray-200 ">No te pierdas éstos podcast de desarrollo. </p>
-            </a>  
-          </div>
-
-        </section>
-      </div>
-
-    </div>
-
-  </main>
-
+  <MainLayout>
+    <Posts />
+    <Sidebar />
+  </MainLayout>
   <Footer />
 </body>
-
 </html>
