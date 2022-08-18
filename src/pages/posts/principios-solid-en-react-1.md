@@ -1,7 +1,7 @@
 ---
 title: "Principios Solid en React Parte 1 - SRP"
 pubDate: "2020-08-12"
-slug: "how-to-compare-dates-in-javascript"
+slug: "solid-principles-react-1"
 description: "Principios Solid en React Parte 1 - Principio de Responsabilidad Unica."
 hero: "/images/solid2.webp"
 tags: ["javascript"]
