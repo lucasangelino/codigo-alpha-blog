@@ -18,7 +18,7 @@ const tags = [
 <div class="lg:col-span-3 md:col-span-1">
     <article class="max-w-6xl mx-auto px-3">
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8 place-content-evenly">
-        {allPosts.map(p => <div class="col-span-1">
+        {allPosts.reverse().map(p => <div class="col-span-1">
             <Card post={p} />
         </div>)}
         </section>
