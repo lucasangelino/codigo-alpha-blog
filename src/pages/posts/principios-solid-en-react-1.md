@@ -9,6 +9,8 @@ layout: "../../layouts/BlogPostLayout.astro"
 draft: false
 ---
 
+> <a href="https://konstantinlebedev.com/solid-in-react/" target="_blank"> Este artículo es una traducción. Puedes ver el original aquí.</a>
+
 ## Motivación
 
 A medida que la industria del software crece y comete errores, las mejores prácticas y los buenos principios de diseño de software surgen y se conceptualizan para evitar repetir los mismos errores en el futuro. El mundo de la programación orientada a objetos (OOP) en particular, es muy rica en buenas prácticas, y SOLID es, sin duda, una de las más influyentes.

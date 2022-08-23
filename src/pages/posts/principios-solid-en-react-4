@@ -11,9 +11,9 @@ draft: false
 
 ## Principio de segregación de interfaz (ISP)
 
-Según ISP, "los clientes no deben depender de interfaces que no usan". Por el bien de las aplicaciones React, lo traduciremos en "los componentes no deberían depender de accesorios que no usan".
+Según ISP, "los clientes no deben depender de interfaces que no usan". Por el bien de las aplicaciones React, lo traduciremos en "los componentes no deberían depender de propiedades que no usan".
 
-Estamos ampliando la definición del ISP aquí, pero no es una gran exageración: tanto los accesorios como las interfaces se pueden definir como contratos entre el objeto (componente) y el mundo exterior (el contexto en el que se usa), por lo que podemos dibujar paralelismos entre los dos. Al final, no se trata de ser estricto e inflexible con las definiciones, sino de aplicar principios genéricos para resolver un problema.
+Estamos ampliando la definición del ISP aquí, pero no es una gran exageración: tanto las propiedades como las interfaces se pueden definir como contratos entre el objeto (componente) y el mundo exterior (el contexto en el que se usa), por lo que podemos dibujar paralelismos entre los dos. Al final, no se trata de ser estricto e inflexible con las definiciones, sino de aplicar principios genéricos para resolver un problema.
 
 Para ilustrar mejor el problema al que se dirige el ISP, usaremos TypeScript para el siguiente ejemplo. Consideremos la aplicación que muestra una lista de videos:
 
