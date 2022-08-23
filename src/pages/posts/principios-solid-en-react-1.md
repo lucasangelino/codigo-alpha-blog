@@ -9,8 +9,6 @@ layout: "../../layouts/BlogPostLayout.astro"
 draft: false
 ---
 
-> <a href="https://konstantinlebedev.com/solid-in-react/" target="_blank"> Este artículo es una traducción. Puedes ver el original aquí.</a>
-
 ## Motivación
 
 A medida que la industria del software crece y comete errores, las mejores prácticas y los buenos principios de diseño de software surgen y se conceptualizan para evitar repetir los mismos errores en el futuro. El mundo de la programación orientada a objetos (OOP) en particular, es muy rica en buenas prácticas, y SOLID es, sin duda, una de las más influyentes.
@@ -209,3 +207,5 @@ Ahora, dependiendo de nuestra interpretación de "una cosa", podemos argumentar 
 > Para resumir, siguiendo el principio de responsabilidad única, efectivamente tomamos una gran pieza de código monolítica y la hacemos más modular. La modularidad es excelente porque hace que nuestro código sea más fácil de leer, razonar, los módulos más pequeños son más fáciles de probar y modificar, es menos probable que introduzcamos la duplicación de código no intencional y, como resultado, nuestro código se vuelve más fácil de mantener.
 
 Nos vemos en el siguiente capítulo donde hablaremos del `Principio Abierto-Cerrado`. 👋
+
+Fuente: <a href="https://konstantinlebedev.com/solid-in-react/" target="_blank"> Applying SOLID principles in React</a>
