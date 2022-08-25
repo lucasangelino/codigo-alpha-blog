@@ -1,12 +1,17 @@
 ---
-const { title, date, hero, youtube } = Astro.props;
+const { title, pubDate, hero, youtube, author, gravatar } = Astro.props;
+const avatarURl = `https://www.gravatar.com/avatar/` + gravatar;
 ---
 
 <article class="max-w-5xl mx-auto px-3">
   <header class="mx-auto max-w-3xl text-center">
     <h1 class="text-5xl font-bold">{title}</h1>
     <div class="flex flex-row justify-between items-center my-4">
-      <time itemprop="datePublished" datetime={date} class="text-ms">{date}</time>
+      <time itemprop="datePublished" datetime={pubDate} class="text-xs">{pubDate}</time>
+      <div class="flex text-xs justify-center content-center items-center">
+          <img class="mx-1 w-10 h-10 rounded-full" src={avatarURl} alt="Rounded avatar">
+          <span class="mx-1">{author}</span>
+      </div>
       <div class="flex flex-row text-xs">
         <a class="underline text-blue-800" href="https://github.com/lucasangelino/codigo-alpha-blog" target="_blank">Edit post on GitHub</a>
       </div>

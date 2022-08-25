@@ -1,11 +1,13 @@
 ---
 title: "Principios Solid en React Parte 1 - SRP"
-pubDate: "2020-08-12"
+pubDate: "25 de Agosto 2022"
 slug: "solid-principles-react-1"
 description: "Principios Solid en React Parte 1 - Principio de Responsabilidad Unica."
 hero: "/images/solid2.webp"
 tags: ["React"]
 layout: "../../layouts/BlogPostLayout.astro"
+author: "Lucas Angelino"
+gravatar: "e6e68dcf018f4c6c2954d899ba5283c8"
 draft: false
 ---
 
@@ -205,7 +207,5 @@ Aquí creamos `useActiveUsers`. Un Hook para encargarnos de la lógica de búsqu
 Ahora, dependiendo de nuestra interpretación de "una cosa", podemos argumentar que el componente primero obtiene los datos y luego los procesa, lo cual no es "una cosa". Podríamos dividirlo aún más, llamando a un Hook en un componente y luego pasando el resultado a otro como parámetro, pero encontré muy pocos casos en los que esto sea realmente beneficioso en aplicaciones del mundo real, así que seamos comprensivos con la definición y aceptemos "renderizar los datos que obtiene el componente" como "una cosa".
 
 > Para resumir, siguiendo el principio de responsabilidad única, efectivamente tomamos una gran pieza de código monolítica y la hacemos más modular. La modularidad es excelente porque hace que nuestro código sea más fácil de leer, razonar, los módulos más pequeños son más fáciles de probar y modificar, es menos probable que introduzcamos la duplicación de código no intencional y, como resultado, nuestro código se vuelve más fácil de mantener.
-
-Nos vemos en el siguiente capítulo donde hablaremos del `Principio Abierto-Cerrado`. 👋
 
 Fuente: <a href="https://konstantinlebedev.com/solid-in-react/" target="_blank"> Applying SOLID principles in React</a>
