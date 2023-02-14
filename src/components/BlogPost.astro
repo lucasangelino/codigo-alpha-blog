@@ -8,12 +8,12 @@ const avatarURl = `https://www.gravatar.com/avatar/` + gravatar;
     <h1 class="text-5xl font-bold">{title}</h1>
     <div class="flex flex-row justify-between items-center my-4">
       <time itemprop="datePublished" datetime={pubDate} class="text-xs">{pubDate}</time>
-      <div class="flex text-xs justify-center content-center items-center">
+      <!-- <div class="flex text-xs justify-center content-center items-center">
           <img class="mx-1 w-10 h-10 rounded-full" src={avatarURl} alt="Rounded avatar">
           <span class="mx-1">{author}</span>
-      </div>
+      </div> -->
       <div class="flex flex-row text-xs">
-        <a class="underline text-blue-800" href="https://github.com/lucasangelino/codigo-alpha-blog" target="_blank">Edit post on GitHub</a>
+        <a class="bg-[#0092E5] text-white p-1 rounded-md" href="https://github.com/lucasangelino/codigo-alpha-blog" target="_blank">Edit post on GitHub</a>
       </div>
     </div>
   </header>
