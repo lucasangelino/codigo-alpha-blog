@@ -2,13 +2,8 @@
 import Card from '../Card.astro';
 const allPosts = await Astro.glob('../../pages/posts/*.md');
 ---
-
-<div class="lg:col-span-3 md:col-span-1">
-    <article class="max-w-6xl mx-auto px-3">
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 py-8 place-content-evenly">
+<section class="max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8 mx-auto" data-test="articles-section">
         {allPosts.map(p => <div class="col-span-1">
             <Card post={p} />
         </div>)}
-        </section>
-    </article>
-</div>
+  </section>

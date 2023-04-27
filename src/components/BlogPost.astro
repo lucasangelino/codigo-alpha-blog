@@ -1,6 +1,5 @@
 ---
 const { title, pubDate, hero, youtube, author, gravatar } = Astro.props;
-const avatarURl = `https://www.gravatar.com/avatar/` + gravatar;
 ---
 
 <article class="max-w-5xl mx-auto px-3">
@@ -12,21 +11,11 @@ const avatarURl = `https://www.gravatar.com/avatar/` + gravatar;
           <img class="mx-1 w-10 h-10 rounded-full" src={avatarURl} alt="Rounded avatar">
           <span class="mx-1">{author}</span>
       </div> -->
-      <div class="flex flex-row text-xs">
-        <a class="bg-[#0092E5] text-white p-1 rounded-md" href="https://github.com/lucasangelino/codigo-alpha-blog" target="_blank">Edit post on GitHub</a>
-      </div>
     </div>
   </header>
 
   <!-- Image -->
   {hero && <img class="rounded-xl mx-auto" style="min-width: 80%;" loading="lazy" src={hero} alt={title} />}
-
-  <!-- YouTube Video -->
-  <!-- {youtube && <div class="embed-responsive aspect-ratio-16/9 mt-6 lg:mt-12">
-    <iframe width="700" height="500" class="embed-responsive-item"
-      src={`https://www.youtube.com/embed/${youtube}`} frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
-  </div>} -->
 
   <!-- Content -->
   <section class="max-w-3xl mx-auto py-6 lg:py-12 content">
